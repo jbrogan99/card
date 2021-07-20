@@ -1,0 +1,78 @@
+#wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, minmax(150px, auto));
+  margin: 150px;
+  background-color: rgb(5, 36, 71);
+  border-radius: 10px;
+}
+
+header {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-right: 50px;
+  margin-bottom: 0;
+}
+
+#info_text {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin-right: 120px;
+  margin-top: 0;
+}
+/* number class not moving into row 3/4 and staying into 2/3*/
+.numbers {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+/* statistics class not moving into row 3/4 and staying into 2/3*/
+.statistics {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+#img {
+  grid-column: 2/3;
+  grid-row: 1/4;
+}
+
+#image-header-desktop {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 10px 10px 0px;
+}
+/* nested grid to allow alignment between elements */
+#container_figures {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
+#first {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#second {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+#third {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+#figure_name1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+#figure_name2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#figure_name3 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
