@@ -21,6 +21,7 @@ h1 {
   color: rgb(153, 146, 146);
   font-family: "Rubik", sans-serif;
   font-size: 15px;
+  margin-top: 5px;
 }
 
 .numbers {
@@ -28,4 +29,5 @@ h1 {
   font-family: "Rubik", sans-serif;
   font-size: 26px;
   margin-bottom: 0;
+  font-weight: bold;
 }

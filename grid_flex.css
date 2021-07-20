@@ -10,8 +10,7 @@
 header {
   grid-column: 1/2;
   grid-row: 1/2;
-  margin-right: 50px;
-  margin-bottom: 0;
+  margin: 25px 30px 0px 30px;
 }
 
 #info_text {
@@ -19,32 +18,49 @@ header {
   grid-row: 2/3;
   margin-right: 120px;
   margin-top: 0;
+  margin: 0px 30px 0px 30px;
 }
-/* number class not moving into row 3/4 and staying into 2/3*/
-.numbers {
+
+#main_container {
   grid-column: 1/2;
   grid-row: 3/4;
 }
-/* statistics class not moving into row 3/4 and staying into 2/3*/
-.statistics {
-  grid-column: 1/2;
-  grid-row: 3/4;
-}
+
 #img {
   grid-column: 2/3;
   grid-row: 1/4;
 }
 
 #image-header-desktop {
+  margin: 0;
+  padding: 0;
+  position: relative;
   width: 100%;
   height: 100%;
+  border-radius: 0 10px 10px 0;
+  background: url(./images/image-header-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#image-header-desktop::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(143, 16, 115);
+  opacity: 50%;
   border-radius: 0px 10px 10px 0px;
 }
+
 /* nested grid to allow alignment between elements */
+
 #container_figures {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;
+  margin-left: 30px;
 }
 
 #first {
