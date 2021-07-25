@@ -1,33 +1,71 @@
-body {
-  background-color: rgb(17, 2, 37);
+@media only screen and (min-width: 668px) {
+  body {
+    background-color: rgb(17, 2, 37);
+  }
+
+  h1 {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 45px;
+  }
+
+  #color_change {
+    color: rgba(158, 87, 202, 0.952);
+  }
+
+  #info_text {
+    color: rgb(153, 146, 146);
+    font-family: "Rubik", sans-serif;
+    font-size: 21px;
+  }
+  .statistics {
+    color: rgb(153, 146, 146);
+    font-family: "Rubik", sans-serif;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .numbers {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 26px;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
 }
 
-h1 {
-  color: white;
-  font-family: "Rubik", sans-serif;
-  font-size: 45px;
-}
+@media only screen and (max-width: 667px) {
+  body {
+    background-color: rgb(17, 2, 37);
+  }
 
-#color_change {
-  color: rgba(158, 87, 202, 0.952);
-}
+  h1 {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+  }
 
-#info_text {
-  color: rgb(153, 146, 146);
-  font-family: "Rubik", sans-serif;
-  font-size: 21px;
-}
-.statistics {
-  color: rgb(153, 146, 146);
-  font-family: "Rubik", sans-serif;
-  font-size: 15px;
-  margin-top: 5px;
-}
+  #color_change {
+    color: rgba(158, 87, 202, 0.952);
+  }
 
-.numbers {
-  color: white;
-  font-family: "Rubik", sans-serif;
-  font-size: 26px;
-  margin-bottom: 0;
-  font-weight: bold;
+  #info_text {
+    color: rgb(153, 146, 146);
+    font-family: "Rubik", sans-serif;
+    font-size: 21px;
+  }
+  .statistics {
+    color: rgb(153, 146, 146);
+    font-family: "Rubik", sans-serif;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .numbers {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 26px;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
 }
